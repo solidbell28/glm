@@ -130,7 +130,7 @@ class GPT2Tokenizer(object):
         #         vocab_file, resolved_vocab_file))
         #     logger.info("loading merges file {} from cache at {}".format(
         #         merges_file, resolved_merges_file))
-        resolved_vocab_file = vocab_file
+        resolved_vocab_file = "glm/" + vocab_file
         resolved_merges_file = merges_file
         logger.info("loading vocabulary file {}".format(vocab_file))
         logger.info("loading merges file {}".format(merges_file))
